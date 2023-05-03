@@ -5,11 +5,13 @@
 
 * [Estado del proyecto](#Estado-del-proyecto)
 
-* [Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+* [Pseudocódigo](#Pseudocódigo)
 
-* [Acceso al proyecto](#acceso-proyecto)
+* [Paso a paso](#paso-a-paso)
 
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
+
+* [Recursos y bibliografía](#recursos-y-bibliografía)
 
 ## Descripción del proyecto
 
