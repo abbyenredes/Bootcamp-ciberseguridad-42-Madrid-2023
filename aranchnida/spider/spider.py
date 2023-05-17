@@ -7,18 +7,15 @@ import os
 import argparse
 from urllib.parse import urlparse
 
-#Variables
-
 #Funcion para los argumentos
-def argument():
-    parser = argparse.ArgumentParser() #objeto de ArgumentParser
-    #añade argumentos al objeto
-    parser.add_argument('url', help='introduce la web a \'scrapear\'', type=str)
-    parser.add_argument('-r', '--recursive', help='las imagenes se descargaran de forma recursiva', action='store_true')
-    parser.add_argument('-l', '--depth', help='nivel de profundidad para la busqueda y descarga de imagenes', type=int, default=5)
-    parser.add_argument('-p', '--path', help='carpeta donde se descargaran las imagenes',type=str, default='./data/')
+parser = argparse.ArgumentParser() #objeto de ArgumentParser
+#añade argumentos al objeto
+parser.add_argument('url', help='introduce la web a \'scrapear\'', type=str)
+parser.add_argument('-r', '--recursive', help='las imagenes se descargaran de forma recursiva', action='store_true')
+parser.add_argument('-l', '--depth', help='nivel de profundidad para la busqueda y descarga de imagenes', type=int, default=5)
+parser.add_argument('-p', '--path', help='carpeta donde se descargaran las imagenes',type=str, default='./data/')
 
-    return parser.parse_args() #analiza los argumentos
+args = parser.parse_args() #analiza los argumentos
 
 #peticion web
 def scraping(web_site, level):
@@ -35,3 +32,5 @@ def scraping(web_site, level):
 				print(i)
 	finally:
 		print(error)
+
+scrapear(url, depth)
